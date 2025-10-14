@@ -1,0 +1,136 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f7; /* Um azul claro muito sutil */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c3e50; /* Azul escuro */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: #34495e; /* Um tom de azul mais escuro que o header */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #55708b; /* Um azul mais claro no hover */
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    position: relative; /* Para posicionar imagens dentro */
+}
+
+section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db; /* Azul vibrante */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+section ul li {
+    margin-bottom: 8px;
+}
+
+/* Estilos de imagem */
+.full-width-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.half-width-img {
+    width: 48%; /* Quase metade para ter um pequeno espaço */
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    float: left; /* Para flutuar a imagem */
+    margin-right: 2%; /* Espaço entre imagem e texto */
+}
+
+.half-width-img.right {
+    float: right;
+    margin-left: 2%;
+    margin-right: 0;
+}
+
+/* Clearfix para evitar que o texto flutue ao lado de outras seções */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.image-caption {
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
